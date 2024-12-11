@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="CasinoLab brings you the best of online casino games. Enjoy a wide selection of the latest casino games at CasinoLab."
+      content="Welcome home to BassBet's Online Casino and Sportsbook. We house top games, generous sports odds, and incredible promotional offers."
     />
-    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
-    <title>CasinoLab Official Site: Your Online Casino Adventure Awaits</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.svg" />
+    <title>BassBet for Online Casino and Online Betting Excitement</title>
     <style type="text/css">
       *,
       ::after,
@@ -18,10 +18,10 @@
       body {
         padding: 0;
         margin: 0;
-        background: rgba(238, 243, 254, 0.9);
+        background-image: url('images/background-primary.webp');
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
           'Helvetica Neue', sans-serif;
-        color: #16171d;
+        color: #f5f5f5;
         font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
@@ -73,21 +73,39 @@
         align-items: center;
         justify-content: center;
         grid-column-gap: 8px;
-        padding: 0 24px;
         text-align: center;
-        line-height: 1;
-        text-shadow: 0 1.5px 0 rgb(222, 232, 253, 0.6);
-        box-shadow: 0 3px 0 0 rgb(88, 140, 243), 0 5px 15px rgba(197, 200, 210.4);
-        background-image: linear-gradient(180deg, rgb(205, 220, 251) 0%, rgb(155, 186, 248) 100%);
-        background-repeat: no-repeat;
-        min-height: 48px;
         font-size: 16px;
-        font-weight: 700;
-        line-height: 1.3;
-        letter-spacing: 0.03em;
+        font-weight: 900;
+        font-style: italic;
+        line-height: 1.2;
+        color: #fff;
         text-transform: uppercase;
-        color: rgb(22, 23, 29);
-        border-radius: 80px;
+        min-height: 48px;
+        border-radius: 6px;
+        border: 2px solid transparent;
+        background: radial-gradient(50% 20% at 50% 0%, rgba(112, 179, 255, 0.8), rgba(112, 179, 255, 0)) padding-box,
+          radial-gradient(40% 16% at 50% 100%, rgba(112, 179, 255, 0.8), rgba(112, 179, 255, 0)) padding-box,
+          linear-gradient(rgb(6, 162, 210), rgb(13, 83, 171) 50%, rgb(16, 60, 159) 60%, rgb(2, 29, 105)) padding-box,
+          linear-gradient(90deg, rgb(0, 156, 255), rgb(124, 255, 130) 50%, rgb(0, 156, 255)) border-box;
+        box-shadow: 0 2px 0 rgb(0, 57, 113), 0 5px 5px rgba(0, 0, 0, 0.5);
+        transform: skew(calc(-1 * 4.5deg));
+      }
+      .batton__inner {
+        display: grid;
+        grid-auto-flow: column;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        grid-column-gap: 8px;
+        width: 100%;
+        height: 100%;
+        padding: 0 22px;
+        opacity: 1;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-stroke: 3px transparent;
+        background-image: linear-gradient(rgb(2, 29, 105), rgb(0, 13, 67));
+        isolation: isolate;
       }
       .main {
         max-width: 1400px;
@@ -97,11 +115,10 @@
       .header {
         position: sticky;
         top: 0;
-        background-color: rgba(238, 243, 254, 0.9);
+        background-image: url('images/background-secondary.webp'),
+          linear-gradient(0deg, rgb(0, 117, 255, 0.1), rgb(0, 117, 255, 0.1)),
+          linear-gradient(rgb(8, 55, 175) 15%, rgb(0, 30, 89));
         z-index: 10;
-        -webkit-backdrop-filter: blur(15px);
-        backdrop-filter: blur(15px);
-        box-shadow: inset 0 -2px rgba(255, 255, 255, 0.7);
       }
       .header__inner {
         display: flex;
@@ -138,24 +155,28 @@
       }
       .menu {
         position: absolute;
-        top: 64px;
+        top: 74px;
         width: 250px;
-        padding: 12px;
+        padding: 14px 12px;
+        background-repeat: no-repeat;
+        background-size: 420px;
         z-index: 10;
         transform: translateX(-200%);
         transition: all 0.5s;
         overflow: hidden auto;
-        background: rgb(255, 255, 255);
-        -webkit-backdrop-filter: blur(15px);
-        backdrop-filter: blur(15px);
-        border-right: 1px solid rgba(255, 255, 255, 0.9);
+        border-radius: 12px;
+        background: linear-gradient(rgb(16, 60, 159), rgb(0, 117, 255, 0.8) 87.5%), linear-gradient(0deg, #04206480, #04206480),
+          linear-gradient(0deg, #042064, #042064);
+        box-shadow: 0 2px 4px rgb(0, 96, 229) inset, 0 -4px 8px rgb(16, 60, 159);
+        background-repeat: no-repeat;
+        border-radius: 12px;
       }
       .menu-burger__label span,
       .menu-burger__label::after,
       .menu-burger__label::before {
         height: 3px;
         border-radius: 2px;
-        background-color: rgb(111, 117, 143);
+        background-color: #fff;
         position: absolute;
       }
       .menu-burger__label span {
@@ -204,7 +225,7 @@
         width: 100%;
       }
       .menu-burger__input:checked + .menu-burger__label + .menu {
-        transform: translateX(0px);
+        transform: translateX(10px);
       }
       .menu__item {
         margin-bottom: 12px;
@@ -213,6 +234,9 @@
         gap: 10px;
         transition: all 0.4s;
       }
+      .menu__item img {
+        margin-right: 10px;
+      }
       .menu__item:hover {
         transform: translateX(5px);
       }
@@ -220,13 +244,13 @@
         font-size: 14px;
         font-weight: 700;
         line-height: 1.4;
-        color: #6f758f;
+        color: rgb(255, 255, 255);
         text-transform: uppercase;
       }
       .logo {
         display: inline-block;
-        width: 160px;
-        height: 36px;
+        width: 173px;
+        height: 49px;
       }
       .header__btn-box {
         margin-left: auto;
@@ -235,12 +259,17 @@
         margin-right: 5px;
       }
       .registration {
-        box-shadow: 0 3px 0 0 rgb(227, 109, 31);
-        background-image: linear-gradient(180deg, rgb(255, 225, 31) 0.22%, rgb(255, 133, 51) 100.84%);
+        background-image: radial-gradient(50% 20% at 50% 0%, rgba(227, 255, 125, 0.8), rgba(227, 255, 125, 0)),
+          radial-gradient(40% 16% at 50% 100%, rgba(227, 255, 125, 0.8), rgba(227, 255, 125, 0)),
+          linear-gradient(rgb(0, 255, 85), rgb(0, 153, 51) 50%, rgb(0, 128, 75) 60%, rgb(0, 102, 94)),
+          linear-gradient(90deg, rgb(0, 255, 140), rgb(227, 255, 125) 50%, rgb(0, 255, 140));
+      }
+      .registration__inner {
+        background-image: linear-gradient(rgb(0, 113, 74), rgb(0, 102, 94));
       }
       .main {
-        padding: 30px;
-        background-image: url('images/main-banner-desktop.webp');
+        padding: 155px 30px;
+        background-image: url('images/main-img.webp');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -254,41 +283,49 @@
         width: 100%;
         height: 100%;
         bottom: 0;
-        background-image: linear-gradient(180deg, rgba(222, 237, 255, 0) 80%, rgb(238, 243, 254) 100%),
-          linear-gradient(
-            90deg,
-            rgb(225, 232, 255) 0%,
-            rgba(225, 232, 255, 0.95) 8%,
-            rgba(255, 234, 226, 0.7) 28%,
-            rgba(255, 238, 233, 0) 32%
-          );
+        background-image: linear-gradient(0deg, rgba(0, 30, 89, 0), rgba(0, 30, 89, 0.15), rgba(0, 30, 89, 0.5)),
+          linear-gradient(90deg, rgb(0, 30, 89), rgba(0, 30, 89, 0.4) 75%, rgba(0, 30, 89, 0)),
+          radial-gradient(114.29% 50% at 50% 49.93%, rgba(0, 30, 89, 0) 0% 0%, rgba(0, 30, 89, 0) 55%, rgb(0, 30, 89));
         left: 0;
+        background-size: 100% 20px, 50% 100%, 100% 100%;
         background-repeat: no-repeat;
       }
       .main__wrapp {
-        padding: 0px 80px;
-        max-width: 475px;
+        padding: 32px 80px;
+        max-width: 550px;
         width: 100%;
         position: relative;
         z-index: 2;
         text-align: center;
       }
       .main__text {
-        display: inline-flex;
-        align-items: center;
-        min-height: 26px;
-        padding: 0 12px;
-        line-height: 1.5;
-        text-transform: uppercase;
-        color: rgb(111, 117, 143);
-        background-color: rgba(255, 255, 255, 0.5);
-        -webkit-backdrop-filter: blur(4px);
-        backdrop-filter: blur(4px);
-        border: 1px solid rgba(255, 255, 255, 0.9);
-        border-bottom-width: 2px;
-        border-radius: 100vmax;
-        box-shadow: 2px 4px 20px rgba(155, 186, 248, 0.3);
+        display: inline-block;
+        position: relative;
+        font-size: 12px;
+        font-weight: 900;
+        font-style: italic;
+        color: rgb(11, 23, 47);
+        background: radial-gradient(17.86% 50% at 50% 0%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)),
+          radial-gradient(25.62% 50% at 50% 100%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)),
+          linear-gradient(rgb(255, 255, 255) 45%, rgb(195, 204, 216) 60%, rgb(172, 196, 229)) padding-box;
+        padding-inline: 10px;
+        padding-block: 3px;
+        border-radius: 4px;
+        box-shadow: 0 2px rgb(120, 159, 210), 0 5px 5px rgba(0, 0, 0, 0.5);
+        transform: skew(calc(-1 * 4.5deg));
         margin-bottom: 15px;
+      }
+      .main__text::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        border: 2px solid transparent;
+        background: linear-gradient(90deg, rgb(220, 231, 245) 0%, rgb(255, 255, 255) 50%, rgb(220, 231, 245) 100%);
+        -webkit-mask: linear-gradient(rgb(255, 255, 255) 0 0) content-box, linear-gradient(rgb(255, 255, 255) 0 0);
+        mask: linear-gradient(rgb(255, 255, 255) 0 0) content-box, linear-gradient(rgb(255, 255, 255) 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
       }
       .main__text-inner {
         display: grid;
@@ -312,48 +349,20 @@
         margin-bottom: 15px;
       }
       .main__btn {
-        box-shadow: none;
-        padding-inline: 12px;
-        padding-block: 10px;
-        border: 1px solid rgb(255, 255, 255);
-        background: #d2e1ed80;
-        -webkit-backdrop-filter: blur(1.5px);
-        backdrop-filter: blur(1.5px);
-        min-width: 320px;
-        min-height: 100px;
-        font-size: 24px;
-        letter-spacing: 0.04em;
+        min-height: 68px;
+        background-image: radial-gradient(50% 20% at 50% 0%, rgba(227, 255, 125, 0.8), rgba(227, 255, 125, 0)),
+          radial-gradient(40% 16% at 50% 100%, rgba(227, 255, 125, 0.8), rgba(227, 255, 125, 0)),
+          linear-gradient(rgb(0, 255, 85), rgb(0, 153, 51) 50%, rgb(0, 128, 75) 60%, rgb(0, 102, 94)),
+          linear-gradient(90deg, rgb(0, 255, 140), rgb(227, 255, 125) 50%, rgb(0, 255, 140));
       }
       .main__btn--inner {
-        display: grid;
-        align-items: center;
-        min-width: 295px;
-        height: 100%;
-        padding: 0 24px;
-        text-align: center;
-        border: 1px solid rgb(255, 255, 255);
-        border-radius: 120px;
-        background-image: url('images/center-bg.webp'),
-          linear-gradient(180deg, rgb(255, 225, 31) 0.22%, rgb(255, 133, 51) 100.84%);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        box-shadow: inset 0 -4px 8px 4px rgba(255, 231, 135, 0.4), inset 0 4px 8px 4px rgba(255, 255, 236, 0.55),
-          inset 0 -5px 0 rgba(255, 234, 100, 0.7);
-        will-change: background-size;
-        position: relative;
-        z-index: 1;
-      }
-      .main__btn--inner::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        box-shadow: inset 0 -4px 8px 4px rgba(255, 231, 135, 0.4), inset 0 4px 8px 4px rgba(255, 255, 236, 0.55),
-          inset 0 -5px 0 rgba(255, 234, 100, 0.7);
-        border-radius: inherit;
+        padding: 0 38px;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-stroke: 4px transparent;
+        background-image: linear-gradient(rgb(0, 113, 74), rgb(0, 102, 94));
+        isolation: isolate;
+        font-size: 28px;
       }
       .main__btn:hover {
         transform: scale(1.1);
@@ -376,16 +385,14 @@
         display: inline-block;
         max-width: 235px;
         width: 100%;
-        background-color: white;
-        padding: 8px;
-        border-radius: 12px;
       }
       .popular__img {
-        border-radius: 12px;
+        border-radius: 10px;
         overflow: hidden;
         position: relative;
         padding: 2px;
         border-radius: 8px;
+        box-shadow: 0 0 15px rgb(0, 96, 229) inset, 0 0px 0 rgb(16, 60, 159), 0 5px 5px rgba(0, 0, 0, 0.5);
       }
       .popular__img::after {
         content: '';
@@ -414,18 +421,15 @@
         text-overflow: ellipsis;
         overflow: hidden;
         width: 100%;
-        text-align: center;
+        color: rgb(133, 196, 255);
       }
       .more-games {
-        min-height: 28px;
-        padding: 2px 12px;
-        border: 1px solid rgba(255, 255, 255, 0.9);
-        border-bottom-width: 2px;
+        color: #00ffcc;
         font-size: 14px;
-        line-height: 1.4;
-        background-color: rgba(255, 255, 255, 0.5);
-        border-radius: 100vmax;
-        box-shadow: 2px 4px 20px rgb(155, 186, 248, 0.3);
+        font-weight: 600;
+        line-height: 16px;
+        display: inline-block;
+        text-transform: uppercase;
       }
       .footer {
         padding: 20px 0;
@@ -434,21 +438,22 @@
       .footer__nav {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        border-top: 2px solid white;
-        border-bottom: 2px solid white;
+        border-top: 1px solid rgba(0, 117, 255);
+        border-bottom: 1px solid rgba(0, 117, 255);
         padding: 15px 0;
       }
       .footer__list-title {
         font-size: 14px;
         font-weight: 700;
         line-height: 1.4;
+        color: rgb(133, 196, 255);
       }
       .footer__list {
         list-style: none;
         padding: 0;
         max-width: 100%;
         width: 100%;
-        color: #2c2f39;
+        color: rgb(133, 196, 255);
       }
       .footer__text {
         display: flex;
@@ -458,13 +463,13 @@
         gap: 14px;
         font-size: 14px;
         padding-top: 40px;
-        color: #2c2f39;
+        color: rgb(133, 196, 255);
         text-align: center;
       }
       @media (max-width: 768px) {
         .logo {
-          width: 36px;
-          height: 36px;
+          width: 104px;
+          height: 49px;
         }
         .popular {
           grid-template-columns: repeat(3, 1fr);
@@ -505,12 +510,12 @@
           transform: translateX(00px);
         }
         .main {
-          padding: 215px 8px 30px;
-          background-image: url('images/main-banner-mobile.webp');
+          padding: 250px 8px 30px;
+          background-image: url('images/mob.webp');
         }
         .main__wrapp {
           max-width: 100%;
-          padding: 0px 35px;
+          padding: 0px 40px;
           text-align: center;
         }
         .main__text {
@@ -521,11 +526,7 @@
         }
         .main__btn {
           font-size: 16px;
-          min-width: 220px;
-          min-height: 85px;
-        }
-        .main__btn--inner {
-          min-width: 255px;
+          min-height: 50px;
         }
         .popular {
           grid-template-columns: repeat(2, 1fr);
@@ -542,12 +543,6 @@
         .popular__link {
           max-width: 124px;
         }
-        .main__wrapp {
-          padding: 0 15px;
-        }
-        .main__btn--inner {
-          min-width: 225px;
-        }
       }
     </style>
   </head>
@@ -559,52 +554,72 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <img src="images/bonus.webp" width="24" height="24" loading="lazy" alt="icon" />
+              <svg width="20" height="20" fill="#ffffff">
+                <use xlink:href="images/sprite.svg#bonus"></use>
+              </svg>
               <a class="menu__link" href="go">Promotions</a>
             </li>
             <li class="menu__item">
-              <img src="images/home.webp" width="24" height="24" loading="lazy" alt="icon" />
+              <svg width="20" height="20" fill="#ffffff">
+                <use xlink:href="images/sprite.svg#home"></use>
+              </svg>
               <a class="menu__link" href="go">Home</a>
             </li>
             <li class="menu__item">
-              <img src="images/casino.webp" width="24" height="24" loading="lazy" alt="icon" />
+              <svg width="20" height="20" fill="#ffffff">
+                <use xlink:href="images/sprite.svg#games-casino"></use>
+              </svg>
               <a class="menu__link" href="go">Casino</a>
             </li>
             <li class="menu__item">
-              <img src="images/livecasino.webp" width="24" height="24" loading="lazy" alt="icon" />
+              <svg width="20" height="20" fill="#ffffff">
+                <use xlink:href="images/sprite.svg#games-live-casino"></use>
+              </svg>
               <a class="menu__link" href="go">Live casino</a>
             </li>
             <li class="menu__item">
-              <img src="images/jackpots.webp" width="24" height="24" loading="lazy" alt="icon" />
+              <svg width="20" height="20" fill="#ffffff">
+                <use xlink:href="images/sprite.svg#jackpots"></use>
+              </svg>
               <a class="menu__link" href="go">Jackpots</a>
             </li>
             <li class="menu__item">
-              <img src="images/challenges.webp" width="24" height="24" loading="lazy" alt="icon" />
-              <a class="menu__link" href="go">Challenges</a>
+              <svg width="20" height="20" fill="#ffffff">
+                <use xlink:href="images/sprite.svg#sports-football"></use>
+              </svg>
+              <a class="menu__link" href="go">Sports</a>
             </li>
             <li class="menu__item">
-              <img src="images/tournament.webp" width="24" height="24" loading="lazy" alt="icon" />
+              <svg width="20" height="20" fill="#ffffff">
+                <use xlink:href="images/sprite.svg#sports-live-sports"></use>
+              </svg>
+              <a class="menu__link" href="go">Live Betting</a>
+            </li>
+            <li class="menu__item">
+              <svg width="20" height="20" fill="#ffffff">
+                <use xlink:href="images/sprite.svg#tournament"></use>
+              </svg>
               <a class="menu__link" href="go">Tournaments</a>
             </li>
             <li class="menu__item">
-              <img src="images/shop.webp" width="24" height="24" loading="lazy" alt="icon" />
-              <a class="menu__link" href="go">Shop</a>
-            </li>
-            <li class="menu__item">
-              <img src="images/cashcrab.webp" width="24" height="24" loading="lazy" alt="icon" />
+              <svg width="20" height="20" fill="#ffffff">
+                <use xlink:href="images/sprite.svg#cashcrab"></use>
+              </svg>
               <a class="menu__link" href="go">Bonus Crab</a>
             </li>
             <li class="menu__item">
-              <img src="images/vip.webp" width="24" height="24" loading="lazy" alt="icon" />
+              <svg width="20" height="20" fill="#ffffff">
+                <use xlink:href="images/sprite.svg#vip"></use>
+              </svg>
               <a class="menu__link" href="go">VIP Levels</a>
             </li>
           </ul>
         </nav>
-        <a class="logo" href="http://casino-lab.uk/">
+        <a class="logo" href="http://bassbet.com.de/">
           <picture class="responsive-logo">
             <source srcset="images/logo.webp" media="(min-width: 768px)" />
             <source srcset="images/logo-mobile.webp" media="(max-width: 767px)" />
-            <img src="images/logo-mobile.webp" width="100%" height="100%" alt="Logo" />
+            <img src="images/logo-mobile.webp" alt="Logo" />
           </picture>
         </a>
         <div class="btn-box header__btn-box">
@@ -617,9 +632,9 @@
       <div class="main">
         <div class="main__wrapp">
           <p class="main__text">
-            <span class="main__text-inner"><span>Welcome bonus</span></span>
+            <span class="main__text-inner"><span>Welcome Bonus</span></span>
           </p>
-          <p class="main__text-title">100% up to €500 + 200 FS</p>
+          <p class="main__text-title">100% up to €500 + 200FS</p>
           <a class="main__btn button" href="go"><span class="batton__inner main__btn--inner">Join Now</span></a>
         </div>
       </div>
@@ -646,7 +661,7 @@
         <div class="content__inner">
           <div class="popular__top">
             <h2>POPULAR GAMES</h2>
-            <a class="more-games" href="go">See all</a>
+            <a class="more-games" href="go">All games</a>
           </div>
           <div class="popular">
             <div class="popular__item">
